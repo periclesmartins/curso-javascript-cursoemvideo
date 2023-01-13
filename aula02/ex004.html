@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com DOM</title>
     <style>
         body {
             background-color: #0298dd;
             color: #ffffff;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim.</div>
     <script>
+         let p1 = window.document.getElementsByTagName('p')[0]
+        let corpo = window.document.body
+        /* let d = window.document.getElementById('msg')
 
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...' */
+        let d = window.document.querySelector('#msg')
+        d.style.background = 'blue'
     </script>
 </body>
 </html>
