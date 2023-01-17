@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Consulado brasileiro.</h1>
+    Digite o seu país: <input type="text" name="country" id="country">
+    <input type="button" value="Verifique" onclick="verificar()">
+    <div id="res">
+        <p>Resposta...</p>
+    </div>
+
+    <script>
+        function verificar() {
+            let country = document.getElementById('country')
+            let res = document.getElementById('res')
+            res.innerHTML = `<p>Você mora no ${country.value}</p>`
+
+            if (country.value == 'Brasil') {
+                res.innerHTML = '<p>Você é Brasileiro e não precisa de visto para entrar no Brasil</p>'
+            }
+            else {
+                res.innerHTML = '<p>Você não é Brasileiro, precisa de visto para entrar no Brasil!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
