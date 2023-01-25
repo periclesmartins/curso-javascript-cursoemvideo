@@ -1,0 +1,23 @@
+@charset 'UTF-8';
+
+body {
+    background-color: #2395ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    color: #ffffff;
+    text-align: center;
+}
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80vw;
+    margin: auto;
+    box-shadow: 5px 5px 10px #0000003f;
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+}
