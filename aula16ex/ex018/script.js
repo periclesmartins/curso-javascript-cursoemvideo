@@ -58,3 +58,13 @@ function finalizar() {
         res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
     }
 }
+num.addEventListener("keyup", (e) => {
+    if (e.keyCode === 13) {
+        adicionar();
+    }
+});
+lista.addEventListener("keyup", (e) => {
+    if (e.keyCode === 13) {
+        finalizar();
+    }
+});
