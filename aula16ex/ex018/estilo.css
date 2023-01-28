@@ -7,15 +7,22 @@ body {
 header {
     color: #ffffff;
     text-align: center;
+    text-shadow: 2px 2px 10px #00000067;
+    font-size: 1.3em;
 }
 section {
     background-color: #ffffff;
     border-radius: 10px;
     text-align: center;
+    font-size: 1.1em;
     padding: 15px;
     width: 80vw;
     margin: auto;
     box-shadow: 5px 5px 10px #0000003f;
+}
+.botao:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #2395ff3a;;
 }
 select {
     width: 200px;
@@ -24,4 +31,13 @@ footer {
     color: #ffffff;
     text-align: center;
     font-style: italic;
+    text-shadow: 2px 2px 10px #00000067;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 5px rgb(0, 238, 255);
 }
